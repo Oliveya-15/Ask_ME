@@ -24,16 +24,6 @@ const Hero = () => {
             <button onClick={handleStartCreating} className='bg-white px-10 py-3 rounded-lg border border-gray-300 hover:scale-102 active:scale-95 transition cursor-pointer'>Watch Demo</button>
         </div>
 
-        {/* Added Notice Message for Frontend-Only Deployment */}
-        <div className='mt-8 mx-auto max-w-2xl w-full px-4'>
-            <div className='bg-yellow-50 border border-yellow-200 rounded-lg p-4 flex items-start sm:items-center gap-3 justify-center text-yellow-800 text-xs sm:text-sm shadow-sm'>
-                <span className='text-lg'>⚠️</span>
-                <p className='text-center'>
-                    <strong>Note:</strong> This is currently a frontend-only deployment. The AI backend services are not connected. The buttons above are for UI demonstration purposes.
-                </p>
-            </div>
-        </div>
-
         <div className='flex items-center gap-4 mt-8 mx-auto text-gray-600'>
             <img src={assets.user_group} alt='' className='h-8'/>Trusted by 10k+ People
         </div>
