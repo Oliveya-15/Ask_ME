@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/logo.png" alt="AskMe" width="320"/>
+<img src="public/logo.svg" alt="AskMe" width="320"/>
 
 ### Full-stack AI content platform
 **Write → design → edit → review, all in one place**
