@@ -17,8 +17,10 @@ const schema = z.object({
 
   // Text AI (Google Gemini)
   GEMINI_API_KEY: z.string().min(1, 'GEMINI_API_KEY is required'),
-  GEMINI_MODEL: z.string().default('gemini-flash-latest'),
-  GEMINI_FALLBACK_MODEL: z.string().default('gemini-flash-lite-latest'),
+  // Flash-Lite first: fastest, and the most generous free-tier quota. Full Flash is the quality fallback.
+  GEMINI_MODEL: z.string().default('gemini-flash-lite-latest'),
+  GEMINI_FALLBACK_MODEL: z.string().default('gemini-flash-latest'),
+  GEMINI_BASE_URL: z.string().optional(), // test hook only; leave unset in production
 
   // Image generation (Cloudflare Workers AI)
   CLOUDFLARE_ACCOUNT_ID: z.string().min(1, 'CLOUDFLARE_ACCOUNT_ID is required'),

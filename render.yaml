@@ -26,9 +26,9 @@ services:
       - key: GEMINI_API_KEY
         sync: false
       - key: GEMINI_MODEL
-        value: gemini-flash-latest
-      - key: GEMINI_FALLBACK_MODEL
         value: gemini-flash-lite-latest
+      - key: GEMINI_FALLBACK_MODEL
+        value: gemini-flash-latest
       - key: CLOUDFLARE_ACCOUNT_ID
         sync: false
       - key: CLOUDFLARE_API_TOKEN
